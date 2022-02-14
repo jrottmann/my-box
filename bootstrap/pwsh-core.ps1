@@ -58,7 +58,7 @@ BEGIN {
         )
 
         $template = "Microsoft.PowerShell_%{NAME}%profile.ps1"
-        $address = "https://raw.githubusercontent.com/springcomp/powershell_profile.ps1/master/"
+        $address = "https://raw.githubusercontent.com/jrottmann/powershell_profile.ps1/master/"
         $fileName = Split-Path $profile -Leaf
         if ($name -ne ""){ $fileName = $fileName.Replace("profile", "$name-profile") }
         $uri = "$($address)$($fileName)"

@@ -11,10 +11,10 @@ Function Invoke-RemoteScript {
 }
 Set-Alias -Name irs -Value Invoke-RemoteScript
 
-irs 'https://aka.ms/install-powershell.ps1' -daily
+irs 'https://aka.ms/install-powershell.ps1'
 
 irm 'https://raw.githubusercontent.com/jrottmann/my-box/main/bootstrap/pwsh-core.ps1' `
 	-OutFile $env:TEMP\pwsh-core.ps1
 
-$pwsh = "$env:LOCALAPPDATA\Microsoft\powershell-daily\pwsh.exe"
+$pwsh = "$env:LOCALAPPDATA\Microsoft\powershell\pwsh.exe"
 . $pwsh -nologo -noprofile -file $env:TEMP\pwsh-core.ps1

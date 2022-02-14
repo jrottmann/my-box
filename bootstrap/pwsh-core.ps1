@@ -85,7 +85,7 @@ BEGIN {
 PROCESS {
 
     Download-Profile
-    Install-Module -Name Pwsh-Profile -Repository PSGallery -Scope CurrentUser -Force
+    Install-Module -Name Pwsh-Profile -Scope CurrentUser -Force
 
     . $profile
 
